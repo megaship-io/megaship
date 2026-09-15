@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CruiseSignal - Price Drop Tracker",
+  title: "Megaship - Price Drop Tracker",
   description:
-    "CruiseSignal watches cruise prices after you book and helps you claim eligible price drops.",
+    "Megaship watches cruise prices after you book and helps you claim eligible price drops.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

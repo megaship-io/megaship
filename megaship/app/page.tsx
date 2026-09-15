@@ -6,15 +6,15 @@ import { Button, Logo, WaveDivider } from "./components/ui";
 
 const faqs = [
   "Do cruise lines really give money back when prices drop?",
-  "Which cruise lines does CruiseSignal track?",
+  "Which cruise lines does Megaship track?",
   "How do I get money back after I already booked?",
-  "Does CruiseSignal file the claim for me?",
+  "Does Megaship file the claim for me?",
   "What counts as an eligible price drop?",
   "Does it still work after final payment?",
   "I booked through a travel agent. Can I still use it?",
-  "How often does CruiseSignal check prices?",
-  "How much does CruiseSignal cost?",
-  "Is CruiseSignal affiliated with the cruise lines?",
+  "How often does Megaship check prices?",
+  "How much does Megaship cost?",
+  "Is Megaship affiliated with the cruise lines?",
 ];
 
 const policies = [
@@ -46,7 +46,7 @@ const policies = [
     line: "Norwegian",
     name: "Price-drop remedies",
     color: "text-[var(--green)]",
-    body: "Programs vary by region, fare, and timing. CruiseSignal tracks the price so you can ask NCL what applies to your booking.",
+    body: "Programs vary by region, fare, and timing. Megaship tracks the price so you can ask NCL what applies to your booking.",
   },
 ];
 
@@ -148,7 +148,7 @@ function NotificationStack() {
     <div className="flex w-full max-w-[400px] flex-col gap-3">
       {notes.map(([title, body, time, style]) => (
         <div key={title} className={`flex gap-3 rounded-[18px] border border-[var(--border)] bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.03),0_10px_30px_rgba(15,23,42,0.05)] ${style}`}>
-          <Logo />
+          {/*<Logo />*/}
           <div className="min-w-0 flex-1">
             <div className="flex items-center justify-between gap-3">
               <p className="truncate text-[14.5px] font-semibold leading-snug tracking-[-0.01em] text-[var(--foreground)]">{title}</p>
@@ -181,7 +181,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="mt-3 max-w-[600px] text-lg font-medium leading-relaxed tracking-[-0.01em] text-[var(--secondary-foreground)] sm:text-[20px]">
-              Cruise prices keep moving after you book. CruiseSignal watches yours 24/7 and helps you claim every dollar back.
+              Cruise prices keep moving after you book. Megaship watches yours 24/7 and helps you claim every dollar back.
             </p>
             <div className="mt-6">
               <Button>
@@ -216,7 +216,7 @@ export default function Home() {
             <FeatureText
               eyebrow="Tracking"
               title={<>Same ship, same cabin,<br />same sail date.</>}
-              body="A lower price only counts if it matches what you booked. CruiseSignal checks your cruise line's public prices around the clock and compares them to your exact cruise."
+              body="A lower price only counts if it matches what you booked. Megaship checks your cruise line's public prices around the clock and compares them to your exact cruise."
               items={["Tracked 24/7", "Full price history for your cruise", "Cruise fare only, taxes and fees separated"]}
             />
             <div className="order-first flex items-center justify-center lg:order-none">
@@ -252,7 +252,7 @@ export default function Home() {
               eyebrow="Claims"
               color="text-[var(--gold)]"
               title={<>We prep the claim.<br />You get the money.</>}
-              body="Every cruise line has its own rules and its own process. CruiseSignal shows you how much to ask for, who to contact, and what to say."
+              body="Every cruise line has its own rules and its own process. Megaship shows you how much to ask for, who to contact, and what to say."
               items={["Policy rules for every covered line built in", "Claim form and phone number ready to go", "Refund, onboard credit, or upgrade, explained"]}
             />
             <div className="order-first flex items-center justify-center lg:order-none">
@@ -318,7 +318,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="mt-3 max-w-[540px] text-[15px] leading-relaxed tracking-[-0.01em] text-[var(--secondary-foreground)]">
-              Every major line has one. They just do not remind you to use it. CruiseSignal watches your price and tells you when a policy applies.
+              Every major line has one. They just do not remind you to use it. Megaship watches your price and tells you when a policy applies.
             </p>
             <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
               {policies.map((policy) => (
@@ -331,7 +331,7 @@ export default function Home() {
               <Link href="#faq" className="group flex flex-col gap-1.5 rounded-2xl bg-[var(--foreground)] p-6 transition hover:bg-slate-800">
                 <span className="text-[13px] font-semibold tracking-widest text-[var(--accent)]">Every rule, spelled out</span>
                 <p className="text-[17px] font-semibold tracking-[-0.015em] text-white">Windows, exclusions & eligibility</p>
-                <p className="text-[14px] leading-relaxed text-white/70">The exact per-line rules CruiseSignal checks against, in plain language.</p>
+                <p className="text-[14px] leading-relaxed text-white/70">The exact per-line rules Megaship checks against, in plain language.</p>
                 <span className="mt-auto flex items-center gap-1.5 pt-3 text-[14px] font-medium text-white">
                   See full coverage
                   <ArrowIcon />
@@ -339,7 +339,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="mt-7 max-w-[560px] text-[12.5px] leading-relaxed text-[var(--muted-foreground)]">
-              Policies are set and applied by the cruise lines and can change at any time. CruiseSignal is independent and not affiliated with any cruise line.
+              Policies are set and applied by the cruise lines and can change at any time. Megaship is independent and not affiliated with any cruise line.
             </p>
           </div>
         </section>
@@ -368,10 +368,10 @@ export default function Home() {
                 for your whole book.
               </h2>
               <p className="mt-3 max-w-[440px] text-[15px] leading-relaxed tracking-[-0.01em] text-white/70">
-                Travel advisors and cruise sellers use CruiseSignal to watch every client booking and turn price drops into loyalty. Bulk tracking, alert routing, and an API built for volume.
+                Travel advisors and cruise sellers use Megaship to watch every client booking and turn price drops into loyalty. Bulk tracking, alert routing, and an API built for volume.
               </p>
               <span className="mt-6 inline-flex items-center gap-1.5 text-[15px] font-medium text-[var(--accent)]">
-                Explore CruiseSignal for business
+                Explore Megaship for business
                 <ArrowIcon />
               </span>
             </div>
