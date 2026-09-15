@@ -312,7 +312,7 @@ export default function Home() {
               <h2 className="max-w-[620px] text-[30px] font-semibold leading-[1.2] tracking-[-0.02em] text-[var(--foreground)] sm:text-[34px]">
                 The policies cruise lines barely advertise.
               </h2>
-              <Link href="#faq" className="inline-flex items-center gap-1.5 text-[15px] font-medium text-[var(--secondary-foreground)] transition hover:text-[var(--foreground)]">
+              <Link href="/faq" className="inline-flex items-center gap-1.5 text-[15px] font-medium text-[var(--secondary-foreground)] transition hover:text-[var(--foreground)]">
                 See full coverage
                 <ArrowIcon />
               </Link>
@@ -328,7 +328,7 @@ export default function Home() {
                   <p className="text-[14px] leading-relaxed text-[var(--secondary-foreground)]">{policy.body}</p>
                 </div>
               ))}
-              <Link href="#faq" className="group flex flex-col gap-1.5 rounded-2xl bg-[var(--foreground)] p-6 transition hover:bg-slate-800">
+              <Link href="/faq" className="group flex flex-col gap-1.5 rounded-2xl bg-[var(--foreground)] p-6 transition hover:bg-slate-800">
                 <span className="text-[13px] font-semibold tracking-widest text-[var(--accent)]">Every rule, spelled out</span>
                 <p className="text-[17px] font-semibold tracking-[-0.015em] text-white">Windows, exclusions & eligibility</p>
                 <p className="text-[14px] leading-relaxed text-white/70">The exact per-line rules Megaship checks against, in plain language.</p>
